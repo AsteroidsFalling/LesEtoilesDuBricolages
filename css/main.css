@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	background-color: #F0F1EE;
 }
 
 * {
@@ -7,9 +8,15 @@ body {
 	font-size: 100%;
 }
 
+.logo {
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+
 .big-button {
-  color: #404040;
-  border: solid 2px #404040;
+  color: #2184BD;
+  border: solid 2px #2184BD;
   text-transform: uppercase;
   text-decoration: none;
   padding: 20px 40px;
@@ -19,13 +26,7 @@ body {
   display: inline-block;
 }
 
-.content-header {
-	position: relative;
-  	top: -350px;
-	text-align: center;
-}
-
-.content-header input {
+.intro input {
 	width: 500px;
 	height: 50px;
 	text-align: center;
@@ -33,48 +34,56 @@ body {
 	border-radius: 3px;
 	border: solid 1px #D1D1D1;
 	margin: 30px auto;
+	padding: 10px;
 }
 
 header {
-	background: url('../images/header.jpg');
+	background: url('../images/head.jpg');
 	height: 80%;
 	background-size: cover;
 	background-position-y: -100px;
 	padding: 20px 65px;
 	background-repeat: no-repeat;
 	text-align: center;
+	border-bottom: 10px solid rgba(0,0,0,0.65);
+}
+
+header nav {
+	margin-bottom: 20px;
 }
 
 header ul {
+  margin: 0;
   padding: 0;
-  text-align: right;
+  text-align: left;
 }
 
 header ul li a {
   text-decoration: none;
-  color: #404040;
-  font-size: 1.2em;
-  font-weight: 600;
+  color: #f4f4f4;
+  font-size: 1em;
+  font-weight: 400;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   border-bottom: solid 1px transparent;
+  padding: 0 4px;
 }
 
 header ul li a:hover, .active {
-  padding-bottom: 4px;
+  padding-bottom: 3px;
   border-bottom: solid 2px #2184BD;
 }
 
 header ul li {
   list-style: none;
   display: inline-block;
-  margin: 20px;
+  margin: 10px 20px;
 }
 
 .intro h1, .intro h2 {
-	color: white;
+	color: #f4f4f4;
 	font-family: 'Source Sans Pro', sans-serif;
 	text-align: center;
 }
@@ -82,12 +91,57 @@ header ul li {
 .intro h2 {
 	font-size: 1.5em;
 	font-weight: 900;
-	text-shadow: 1px 1px 1px black;
+	max-width: 500px;
+	margin: auto;
 }
 
 .intro h1 {
 	font-size: 3em;
-	text-shadow: 1px 1px 1px black;
 	font-weight: 900;
 	margin-bottom: 10px;
+}
+
+.intro {
+	background-color:  rgba(0,0,0,0.5);
+	padding: 35px 0 ;
+}
+
+.text-blue {
+	color: #2184BD;
+}
+
+@media screen and (max-width: 870px) {
+	.intro h2 {
+		font-size: 0.9em;
+	}
+
+	.intro h1 {
+		font-size: 1.5em;
+		font-weight: 700;
+	}
+
+	header {
+		height: auto;
+	}
+
+	nav {
+		display: none;
+	}
+
+	.intro input {
+		margin: 5px auto;
+		height: 30px;
+		width: 250px;
+	}
+
+	.big-button {
+		padding: 10px 30px;
+	}
+
+}
+
+@media screen and (max-width: 540px) {
+	.intro {
+		padding: 10px;
+	}
 }
