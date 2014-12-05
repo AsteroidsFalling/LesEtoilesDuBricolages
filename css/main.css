@@ -226,6 +226,52 @@ footer ul li {
 		font-size: 0.9em;
 		padding: 10px 30px;
 	}
+	#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	  cursor: pointer;
+	  border-radius: 1px;
+	  height: 5px;
+	  width: 35px;
+	  background: black;
+	  position: absolute;
+	  display: block;
+	  content: '';
+	  position: fixed;
+	  z-index: 1;
+	  left: 10;
+	}
+	#nav-toggle span:before {
+		position: fixed;
+		top: 10px;
+	}
+	#nav-toggle span:after {
+		margin-top: 10px;
+	position: fixed;
+	}
+	.body-active{
+		margin-left:150px;
+	}
+	.nav-active{
+		height: 100%;
+		background: white;
+		display: block;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 150px;
+		border-right: solid 2px #2184BD;
+	}
+	.nav-active ul li{
+		width: 100%;
+		height: 50px;
+	}
+	.nav-active ul .logo{
+		margin-top: 50px;
+		margin-left: 15px;
+		margin-bottom: 25px;
+	}
+	.nav-active ul li a{
+		color: black;
+	}
 
 }
 
