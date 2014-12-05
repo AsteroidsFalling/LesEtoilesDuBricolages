@@ -53,10 +53,11 @@ header {
 	background-position: center center;
 	padding: 20px 65px;
 	width: 100%;
-	height: 60%;
+	height: 80%;
 	background-repeat: no-repeat;
 	text-align: center;
 	box-sizing: border-box;
+	margin-bottom: 50px;
 }
 
 header nav {
@@ -122,6 +123,84 @@ header ul li {
 	color: #2184BD;
 }
 
+.fiche, .pro{
+  background: #404040;
+  border: 2px solid #404040;
+  background-size: cover !important;
+  height: 300px;
+  border-radius: 2px;
+  padding: 0px;
+}
+
+.fiche:hover, .pro:hover {
+  background: #2184BD !important;
+}
+
+.fiche:hover h3, .pro:hover h3{
+  display : none;
+}
+
+.fiche h3, .pro h3 {
+  color: #F4F4F4;
+  height : 30px;
+  line-height: 30px;
+  margin-top: 0;
+  text-align: center;
+  position: relative;
+  top: 270px;
+  font-weight: 100;
+  background-color: #404040;
+ }
+
+
+.fiche p, .pro p {
+  display : none;
+  padding: 18px;
+  margin : auto;
+  color: #F4F4F4;
+  vertical-align: middle;
+}
+.fiche:hover p, .pro:hover p{
+  display: inline-block;
+}
+
+.title-section {
+	font-size: 1.7em;
+	color: #404040;
+}
+
+footer {
+	background: url('../images/footer.png');
+	height: 150px;
+	background-position-x: -5px;
+	margin-top: 200px;
+	padding-top: 10px;
+	background-size: cover;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+footer ul {
+	padding: 0;
+	color: #f4f4f4;
+	list-style: none;
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+footer ul li {
+	display: inline-block;
+	margin: 15px;
+}
+
+.social-network {
+	margin-top: 0;
+}
+
+.social-network li i {
+	font-size: 3em;
+}
+
 @media screen and (max-width: 870px) {		
 
 	.intro {
@@ -171,42 +250,17 @@ header ul li {
 		padding: 5px 10px;
 		font-size: 0.7em;
 	}
-}
 
-.fiche{
-	background: #404040;
-  border: 2px solid #2184bd;
+	footer ul {
+		display: none;
+	}
 
-  background-size: cover !important;
+	footer .social-network {
+		display: inline-block;
+	}
 
-  height: 300px;
-  border-radius: 9px 9px 9px 9px;
-  padding: 0px;
-}
-.fiche:hover {
-  background: #2184BD !important;
-}
-.fiche:hover h3{
-  visibility : hidden;
-}
-
-.fiche h3{
-  background : #2184BD;
-  color: #F4F4F4;
-  height : 30px;
-  margin-top: 0;
-  }
-
-
-.fiche p {
-  visibility : hidden;
-  width : 80%;
-  margin : auto;
-  color: #F4F4F4;
-  display:table-cell;
-  vertical-align: middle;
-}
-.fiche:hover p{
-  visibility : visible;
+	footer .social-network li i {
+		font-size: 2em;
+	}
 }
 
