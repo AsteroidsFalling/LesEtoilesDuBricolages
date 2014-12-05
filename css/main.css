@@ -165,3 +165,41 @@ header ul li {
 		font-size: 0.7em;
 	}
 }
+
+.fiche{
+	background: #404040;
+  border: 2px solid #2184bd;
+
+  background-size: cover !important;
+
+  height: 300px;
+  border-radius: 9px 9px 9px 9px;
+  padding: 0px;
+}
+.fiche:hover {
+  background: #2184BD !important;
+}
+.fiche:hover h3{
+  visibility : hidden;
+}
+
+.fiche h3{
+  background : #2184BD;
+  color: #F4F4F4;
+  height : 30px;
+  margin-top: 0;
+  }
+
+
+.fiche p {
+  visibility : hidden;
+  width : 80%;
+  margin : auto;
+  color: #F4F4F4;
+  display:table-cell;
+  vertical-align: middle;
+}
+.fiche:hover p{
+  visibility : visible;
+}
+
