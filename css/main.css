@@ -167,7 +167,7 @@ header ul li {
 .title-section {
 	margin-bottom: 10px; 
 	font-size: 1.7em;
-	color: #404040;
+	color: #2184BD;
 }
 
 footer {
@@ -256,7 +256,7 @@ section {
 	  border-radius: 1px;
 	  height: 5px;
 	  width: 35px;
-	  background: black;
+	  background: #2184BD;
 	  position: absolute;
 	  display: block;
 	  content: '';
@@ -296,6 +296,14 @@ section {
 	}
 	.nav-active ul li a{
 		color: black;
+	}
+
+	section * {
+		text-align: center;
+	}
+
+	section ul li{
+		text-align: left;
 	}
 
 }
